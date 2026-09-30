@@ -1,0 +1,2 @@
+#!/bin/bash
+exec "$(ls /usr/sbin/php-fpm* | head -n 1)" -F -y /etc/php-fpm-checkip.conf
