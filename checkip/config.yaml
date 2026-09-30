@@ -12,9 +12,9 @@ hassio_api: true
 map:
   - ssl
 ports:
-  443/tcp: 85
+  80/tcp: 85
 ports_description:
-  443/tcp: Web
+  80/tcp: Web
 options:
   ssl: false
   certfile: fullchain.pem
