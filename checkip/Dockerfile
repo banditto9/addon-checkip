@@ -29,12 +29,9 @@ RUN \
         php8.4 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
 WORKDIR /var/www
 
-WORKDIR /
-
 # Copy root filesystem
-COPY rootfs /
+COPY rootfs /var/www
 
 ENTRYPOINT ["/init"]
