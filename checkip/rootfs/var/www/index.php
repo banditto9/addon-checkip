@@ -1,7 +1,6 @@
 <?php
 $nonce = base64_encode(random_bytes(16));
 
-header('Content-Security-Policy: default-src 'none'; style-src 'nonce-$nonce'; base-uri 'none'; form-action 'none';');
 header('Strict-Transport-Security: max-age=63072000; includeSubDomains; preload');
 header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: no-referrer');
